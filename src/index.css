@@ -2,68 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Neuralink Futuristic Design System - Enhanced */
+/* Neuralink Futuristic Design System */
 
 @layer base {
   :root {
-    /* Neural Interface Color Palette - Enhanced */
-    --neuro-void: 220 40% 3%;
-    --neuro-dark: 220 35% 6%;
-    --neuro-darker: 220 30% 9%;
+    /* Neural Interface Color Palette */
+    --neuro-dark: 220 30% 8%;
+    --neuro-darker: 220 35% 5%;
     --neuro-surface: 220 25% 12%;
     --neuro-surface-light: 220 20% 18%;
-    --neuro-surface-glow: 220 15% 22%;
     
-    /* Enhanced Brand Colors with Quantum Effects */
-    --neural-blue: 217 100% 65%;
-    --neural-blue-bright: 217 100% 75%;
-    --neural-purple: 262 90% 62%;
-    --neural-purple-bright: 262 90% 72%;
-    --neural-cyan: 188 95% 60%;
-    --neural-cyan-bright: 188 95% 70%;
-    --neural-pink: 316 85% 68%;
-    --neural-pink-bright: 316 85% 78%;
-    --neural-quantum: 280 100% 70%;
-    --neural-plasma: 340 100% 65%;
+    /* Brand Colors */
+    --neural-blue: 217 91% 60%;
+    --neural-purple: 262 83% 58%;
+    --neural-cyan: 188 84% 55%;
+    --neural-pink: 316 73% 65%;
     
-    /* Status Colors - Enhanced */
-    --neural-success: 142 80% 50%;
-    --neural-success-bright: 142 80% 60%;
-    --neural-warning: 45 100% 62%;
-    --neural-warning-bright: 45 100% 72%;
-    --neural-danger: 0 90% 65%;
-    --neural-danger-bright: 0 90% 75%;
-    --neural-info: 200 100% 45%;
-    --neural-info-bright: 200 100% 55%;
+    /* Status Colors */
+    --neural-success: 142 71% 45%;
+    --neural-warning: 45 93% 58%;
+    --neural-danger: 0 84% 60%;
+    --neural-info: 200 98% 39%;
     
-    /* Text Colors - Enhanced */
-    --neural-text: 220 20% 98%;
-    --neural-text-muted: 220 15% 75%;
-    --neural-text-dim: 220 12% 55%;
-    --neural-text-glow: 220 25% 100%;
+    /* Text Colors */
+    --neural-text: 220 15% 95%;
+    --neural-text-muted: 220 10% 70%;
+    --neural-text-dim: 220 8% 50%;
     
-    /* Advanced Gradients */
-    --gradient-neural: linear-gradient(135deg, hsl(var(--neural-blue)) 0%, hsl(var(--neural-purple)) 50%, hsl(var(--neural-cyan)) 100%);
-    --gradient-brain: linear-gradient(135deg, hsl(var(--neural-cyan)) 0%, hsl(var(--neural-pink)) 50%, hsl(var(--neural-quantum)) 100%);
-    --gradient-success: linear-gradient(135deg, hsl(var(--neural-success)) 0%, hsl(var(--neural-success-bright)) 100%);
-    --gradient-warning: linear-gradient(135deg, hsl(var(--neural-warning)) 0%, hsl(var(--neural-warning-bright)) 100%);
-    --gradient-danger: linear-gradient(135deg, hsl(var(--neural-danger)) 0%, hsl(var(--neural-danger-bright)) 100%);
-    --gradient-quantum: linear-gradient(45deg, hsl(var(--neural-quantum)), hsl(var(--neural-plasma)), hsl(var(--neural-cyan)));
-    --gradient-plasma: conic-gradient(from 0deg, hsl(var(--neural-blue)), hsl(var(--neural-purple)), hsl(var(--neural-cyan)), hsl(var(--neural-pink)), hsl(var(--neural-blue)));
+    /* Gradients */
+    --gradient-neural: linear-gradient(135deg, hsl(var(--neural-blue)), hsl(var(--neural-purple)));
+    --gradient-brain: linear-gradient(135deg, hsl(var(--neural-cyan)), hsl(var(--neural-pink)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--neural-success)), hsl(142 71% 35%));
+    --gradient-warning: linear-gradient(135deg, hsl(var(--neural-warning)), hsl(25 93% 53%));
+    --gradient-danger: linear-gradient(135deg, hsl(var(--neural-danger)), hsl(0 84% 50%));
     
-    /* Advanced Shadows & Effects */
-    --neural-glow: 0 0 30px hsla(var(--neural-blue), 0.4);
-    --neural-glow-strong: 0 0 60px hsla(var(--neural-blue), 0.6);
-    --neural-glow-quantum: 0 0 40px hsla(var(--neural-quantum), 0.5);
-    --brain-glow: 0 0 50px hsla(var(--neural-cyan), 0.5);
-    --surface-shadow: 0 12px 40px hsla(220, 40%, 2%, 0.4);
-    --glass-border: 1px solid hsla(var(--neural-text), 0.1);
-    --glass-shadow: 0 8px 32px hsla(220, 30%, 2%, 0.3), inset 0 1px 0 hsla(var(--neural-text), 0.1);
+    /* Shadows & Effects */
+    --neural-glow: 0 0 30px hsla(var(--neural-blue), 0.3);
+    --neural-glow-strong: 0 0 50px hsla(var(--neural-blue), 0.5);
+    --brain-glow: 0 0 40px hsla(var(--neural-cyan), 0.4);
+    --surface-shadow: 0 8px 32px hsla(220, 30%, 2%, 0.3);
     
-    /* Enhanced Animations */
-    --transition-neural: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-    --transition-smooth: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Animations */
+    --transition-neural: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     
     /* Design System Mapping */
     --background: var(--neuro-dark);
@@ -118,162 +99,52 @@
     overflow-x: hidden;
   }
 
-  /* Enhanced Neural Animation Effects */
+  /* Neural Animation Effects */
   @keyframes neural-pulse {
-    0%, 100% { 
-      transform: scale(1) rotate(0deg); 
-      opacity: 0.9; 
-      filter: brightness(1);
-    }
-    50% { 
-      transform: scale(1.08) rotate(2deg); 
-      opacity: 1; 
-      filter: brightness(1.2);
-    }
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
   }
 
   @keyframes brain-wave {
-    0% { 
-      transform: translateX(-100%) scaleY(1); 
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0%) scaleY(1.2);
-    }
-    100% { 
-      transform: translateX(100%) scaleY(1); 
-      opacity: 0;
-    }
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
   }
 
   @keyframes neural-glow {
-    0%, 100% { 
-      box-shadow: var(--neural-glow);
-      filter: brightness(1);
-    }
-    50% { 
-      box-shadow: var(--neural-glow-strong), 0 0 80px hsla(var(--neural-cyan), 0.3);
-      filter: brightness(1.3);
-    }
-  }
-
-  @keyframes quantum-glow {
-    0%, 100% { 
-      box-shadow: var(--neural-glow-quantum);
-      background-position: 0% 50%;
-    }
-    50% { 
-      box-shadow: var(--neural-glow-quantum), var(--brain-glow);
-      background-position: 100% 50%;
-    }
+    0%, 100% { box-shadow: var(--neural-glow); }
+    50% { box-shadow: var(--neural-glow-strong); }
   }
 
   @keyframes neuron-fire {
-    0% { 
-      opacity: 0.4; 
-      transform: scale(0.9);
-    }
-    50% { 
-      opacity: 1; 
-      transform: scale(1.1);
-    }
-    100% { 
-      opacity: 0.4; 
-      transform: scale(0.9);
-    }
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
   }
 
   @keyframes data-flow {
-    0% { 
-      transform: translateY(100%) scale(0) rotate(0deg); 
-      opacity: 0; 
-    }
-    30% { 
-      opacity: 1; 
-      transform: translateY(50%) scale(1) rotate(180deg);
-    }
-    70% { 
-      opacity: 1; 
-      transform: translateY(-50%) scale(1) rotate(360deg);
-    }
-    100% { 
-      transform: translateY(-100%) scale(0) rotate(540deg); 
-      opacity: 0; 
-    }
-  }
-
-  @keyframes plasma-rotation {
-    from { 
-      transform: rotate(0deg); 
-    }
-    to { 
-      transform: rotate(360deg); 
-    }
-  }
-
-  @keyframes glass-shimmer {
-    0% {
-      background-position: -200% 0;
-    }
-    100% {
-      background-position: 200% 0;
-    }
-  }
-
-  @keyframes quantum-float {
-    0%, 100% {
-      transform: translateY(0px) rotate(0deg);
-    }
-    33% {
-      transform: translateY(-10px) rotate(2deg);
-    }
-    66% {
-      transform: translateY(5px) rotate(-1deg);
-    }
+    0% { transform: translateY(100%) scale(0); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-100%) scale(1); opacity: 0; }
   }
 
   .neural-pulse {
-    animation: neural-pulse 3s ease-in-out infinite;
+    animation: neural-pulse 2s ease-in-out infinite;
   }
 
   .brain-wave {
-    animation: brain-wave 4s ease-in-out infinite;
+    animation: brain-wave 3s linear infinite;
   }
 
   .neural-glow {
-    animation: neural-glow 2.5s ease-in-out infinite;
-  }
-
-  .quantum-glow {
-    animation: quantum-glow 3s ease-in-out infinite;
+    animation: neural-glow 2s ease-in-out infinite;
   }
 
   .neuron-fire {
-    animation: neuron-fire 2s ease-in-out infinite;
+    animation: neuron-fire 1.5s ease-in-out infinite;
   }
 
   .data-flow {
-    animation: data-flow 2.5s ease-in-out infinite;
-  }
-
-  .plasma-rotation {
-    animation: plasma-rotation 8s linear infinite;
-  }
-
-  .quantum-float {
-    animation: quantum-float 4s ease-in-out infinite;
-  }
-
-  .glass-shimmer {
-    background: linear-gradient(
-      90deg,
-      transparent,
-      hsla(var(--neural-text), 0.05),
-      transparent
-    );
-    background-size: 200% 100%;
-    animation: glass-shimmer 3s ease-in-out infinite;
+    animation: data-flow 2s ease-in-out infinite;
   }
 
   /* Mobile App Container */
@@ -285,7 +156,7 @@
     overflow: hidden;
   }
 
-  /* Enhanced Neural Network Background */
+  /* Neural Network Background */
   .neural-bg::before {
     content: '';
     position: absolute;
@@ -294,41 +165,11 @@
     right: 0;
     bottom: 0;
     background: 
-      radial-gradient(circle at 20% 20%, hsla(var(--neural-blue), 0.15) 0%, transparent 60%),
-      radial-gradient(circle at 80% 80%, hsla(var(--neural-purple), 0.12) 0%, transparent 55%),
-      radial-gradient(circle at 60% 40%, hsla(var(--neural-cyan), 0.08) 0%, transparent 50%),
-      radial-gradient(circle at 40% 70%, hsla(var(--neural-quantum), 0.06) 0%, transparent 45%),
-      linear-gradient(135deg, hsla(var(--neural-pink), 0.03) 0%, transparent 50%, hsla(var(--neural-blue), 0.03) 100%);
+      radial-gradient(circle at 20% 20%, hsla(var(--neural-blue), 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsla(var(--neural-purple), 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 60% 40%, hsla(var(--neural-cyan), 0.05) 0%, transparent 50%);
     pointer-events: none;
     z-index: -1;
-    animation: plasma-rotation 20s linear infinite;
-  }
-
-  .neural-bg::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-      repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 2px,
-        hsla(var(--neural-blue), 0.02) 2px,
-        hsla(var(--neural-blue), 0.02) 4px
-      ),
-      repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 2px,
-        hsla(var(--neural-cyan), 0.02) 2px,
-        hsla(var(--neural-cyan), 0.02) 4px
-      );
-    pointer-events: none;
-    z-index: -1;
-    opacity: 0.3;
   }
 
   /* Scrollbar Styling */
